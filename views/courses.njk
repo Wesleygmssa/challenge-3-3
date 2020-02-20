@@ -1,0 +1,58 @@
+ {# {% extends "layout.njk" %}  #}
+ <header>
+    <div class="links">
+        <a href="/">About</a>
+        <a href="/portfolio">Portfolio</a>
+        <a href="/curses">Cursos</a>
+    </div>
+</header>
+
+ {% block css %}
+     <link rel="stylesheet" href="/curse.css">
+ {%endblock%}
+
+{% block head %}
+    <title> Cursos Rocktseat</title>
+{% endblock %}
+
+    <div id="wrapper">
+        <h1>Cursos</h1>
+    </div>
+            
+
+
+<section class="cards">
+
+{% block content %}
+ {% for item in items%}
+            <div class="card" id="{{item.id}}">
+                <div class="card-img">
+                    <img src="{{item.img}}" alt="">
+                    {% if item.featured == 'launchbase' %}
+                        <div class="featured">Featured</div>
+                    {% endif %}
+                    {% if item.featured == false %}
+                        <div class="not-featured">not-featured</div>
+                    {% endif %}
+                </div>
+                <div class="card_content">
+                    <p>{{item.info_1}}</p>
+                </div>
+                <div class="card_info">
+                    {{item.info_2}}
+                </div>
+            </div>
+{% endfor %}
+
+</section><!-- FIM CARDS -->
+<script src="/courses.js"></script>
+{% endblock %}
+
+<footer class="links">
+    <a href="https://www.linkedin.com/in/wgmssa/" target="_blank">Linkedin</a>
+    <a href="https://github.com/Wesleygmssa" target="_blank">Githup</a>
+    <a href="mailto:contato.wesleygm@gmail.com" target="_blank">E-mail</a>
+
+    <p>Wesley Guerra © 2020 - All rights reserved</p>
+    <script src="curse.js"></script>
+</footer>

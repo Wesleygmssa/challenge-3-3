@@ -1,0 +1,188 @@
+@import 'https://fonts.googleapis.com/css?family=Roboto&display=swap';
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+:root{
+--color-green: #50fa7b;
+--color-orange: rgb(255, 166, 0);
+--color-rocket: #7159c1;
+--color-rgba: rgba(0, 0, 0, 0.2);
+--color--padrao: #50fa7b;
+}
+
+*{
+margin: 0;
+padding: 0;
+border: 0;
+font-family: 'Roboto', sans-serif;
+box-sizing: border-box;
+
+}
+
+body{
+background-color: #282a36;
+}
+
+/* === header ==== */
+
+header{
+
+padding: 32px;
+border-bottom: 1px solid #333;
+background: rgba(0,0,0,0.274);
+
+}
+
+.links{
+text-align: center;
+}
+
+.links a{
+color: #fff;
+text-decoration: none;
+font-size: 18px;
+line-height: 28px;
+margin: 0 16px;
+}
+
+header > .links > a:first-child{
+color: var(--color-green);
+border-bottom: 2px solid var(--color-green);
+}
+
+header .links a:hover{
+border-bottom: 2px solid var(--color-green);
+color: var(--color--padrao);
+transition: color 700ms;
+}
+
+/* === header === */
+
+#wrapper{
+padding: 30px;
+text-align: center;
+color: white;
+}
+
+
+/* ===== header ===== */
+
+
+.cards{
+padding: 30px;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+/* gap: 20px; */
+
+}
+
+/* CARDS */
+.card{
+max-width: 350px;
+padding: 40px;
+border-radius: 20px;
+background-color: var(--color-rgba);
+border: 3px solid #282a36;
+color:#7159C1; 
+box-shadow: 5px 5px 15px;
+margin: 10px auto;
+
+
+}
+#launchbase:hover{
+border: 3px solid #af9200;
+transition: 0.2s;
+}
+.card:hover{
+border: 3px solid #50fa7b;
+transition: 0.2s;
+}
+
+#starter:hover{
+border: 3px solid #7159C1;
+transition: 0.2s;
+}
+
+#card > .card_info > span{
+display: block;
+padding-top: 30px;
+}
+#starter span{
+color: #7159C1;
+}
+
+#launchbase span{
+color: #af9200;
+
+}
+
+#gostack span{
+color: #50fa7b;
+}
+
+
+.cards .card-img{
+text-align: center;
+padding-bottom: 50px;
+
+}
+
+.card_content{
+padding-top: 50px ;
+text-align: center;
+color: white;
+}
+
+.card_info{
+padding-top: 90px;
+text-align: center;
+color: white;
+}
+
+.card_info span{
+display: block;
+padding-top: 30px;
+font-weight: bold;
+}
+
+
+
+/* ====== FIM card ===== */
+
+
+/* ====MODAL===== */
+
+
+
+
+
+/* =======footer ========= */
+footer.links a{
+border-bottom: 2px solid var(--color--padrao);
+}
+footer.links p{
+padding: 32px;
+color: white;
+font-size: 10px;
+}
+
+/* ====video=== */
+ .video{
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;
+
+    
+ }
+
+ .card_video-container{
+
+    width: 800px;
+    height: 400px;
+  
+ }
+ .card_video-container iframe{
+
+     width: 100%;
+     height: 100%;
+ }

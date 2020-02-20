@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        {% block css %}
+            {# CSS #}
+        {%endblock%}
+        {% block head %}
+            <title>Wesley Guerra</title>
+        {% endblock %}
+
+</head>
+
+<body>
+
+<header>
+    <div class="links">
+        <a href="/">About</a>
+        <a href="/portfolio">Portfolio</a>
+        <a href="/courses">Cursos</a>
+    </div>
+</header>
+
+{% block content %}
+
+    {# Contéudo das outras paginas #}
+  
+{% endblock %}
+
+<footer class="links">
+    <a href="https://www.linkedin.com/in/wgmssa/" target="_blank">Linkedin</a>
+    <a href="https://github.com/Wesleygmssa" target="_blank">Githup</a>
+    <a href="mailto:contato.wesleygm@gmail.com" target="_blank">E-mail</a>
+
+    <p>Wesley Guerra © 2020 - All rights reserved</p>
+</footer>
+
+<script src="/scripts.js"></script>
+</body>
+</html>
